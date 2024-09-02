@@ -90,7 +90,7 @@ jobs:
         run: |
           unzip macos-x64.zip -d /tmp/
           mv /tmp/macos-x64/libjdk.a /tmp/
-          make clean all
+          make TARGET=macosx clean all
       - name: 'Upload static image artifact'
         uses: actions/upload-artifact@v4
         with:
